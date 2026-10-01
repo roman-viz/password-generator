@@ -1,4 +1,4 @@
-let randomChars = "";
+let randomChars = 'ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz';
 let genPassLength = document.getElementById('genLength');
 let genRange = document.getElementById('genRange');
 let genPassText = document.getElementById('genPass');
