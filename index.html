@@ -17,10 +17,13 @@
             <h1>Password generator</h1>
         </header>
         <div class="genPass">
-            <div class="genPass__text">
-                <input id="genPass" type="text" spellcheck="false" placeholder="Generate password" value="" readonly>
-                <span id="copy" class="copy"></span>
-                <span id="copyText" class="copyText">COPY!</span>
+            <div class="genPass__output">
+                <div class="genPass__text">
+                    <input id="genPass" type="text" spellcheck="false" placeholder="Generate password" value="" readonly>
+                    <button id="copy" class="copy" type="button" aria-label="Copy password"></button>
+                    <span id="copyText" class="copyText">COPY!</span>
+                </div>
+                <span id="strengthLabel" class="strengthLabel" hidden></span>
             </div>
             <div class="genPass__button">
                 <button id="genButton" type="submit">
@@ -30,11 +33,13 @@
         </div>
         <div class="reminder">
             <input id="reminder" type="text" spellcheck="false" placeholder="Remember your password" value="" readonly>
+            <button id="copyReminder" class="copy" type="button" aria-label="Copy reminder"></button>
+            <span id="copyReminderText" class="copyText">COPY!</span>
         </div>
         <div class="genOptions">
             <div class="genLength">                             
-                <input id="genLength" type="number" min="1" max="50" value="8">
-                <input id="genRange" type="range" min="1" max="50" value="8">
+                <input id="genLength" type="number" min="4" max="50" value="8">
+                <input id="genRange" type="range" min="4" max="50" value="8">
             </div>
             <div class="genType">
                 <div class="chek1">
